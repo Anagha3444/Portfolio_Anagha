@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagha Kaloge - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
+    <img src="profile.jpg" alt="Anagha" class="hero-image">
+</head>
+<body>
+    <!-- Navigation (Optional) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AK</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <canvas id="particles"></canvas>
+        
+        <div class="hero-content">
+            <h2 class="greeting">Hi, I'm</h2>
+            <h1 class="hero-name">Anagha Kaloge</h1>
+            <p class="hero-tagline">Student | Full Stack Developer & AI Enthusiast</p>
+            <p class="hero-description">
+                B.E. Computer Engineering student (2023–2027) building real world solutions. 
+                Passionate about web development, AI/ML, and empowering farmers through technology.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">
+            <span class="gradient-text">Skills</span> & Expertise
+        </h2>
+        <p class="section-subtitle">Hover over the orbs to see proficiency levels</p>
+
+        <div class="skills-container">
+            <!-- Frontend Skills -->
+            <div class="skill-category" data-aos="fade-up">
+                <h3 class="category-title">Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-orb" data-skill="HTML/CSS" data-level="90" style="background: linear-gradient(135deg, #f97316, #dc2626);">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-name">HTML/CSS</div>
+                    </div>
+                    <div class="skill-orb" data-skill="JavaScript" data-level="85" style="background: linear-gradient(135deg, #eab308, #facc15);">
+                        <div class="skill-icon">🟨</div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-orb" data-skill="React" data-level="80" style="background: linear-gradient(135deg, #3b82f6, #06b6d4);">
+                        <div class="skill-icon">⚛️</div>
+                        <div class="skill-name">React</div>
+                    </div>
+                    <div class="skill-orb" data-skill="Next.js" data-level="75" style="background: linear-gradient(135deg, #6b7280, #374151);">
+                        <div class="skill-icon">▲</div>
+                        <div class="skill-name">Next.js</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="category-title">Backend & Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-orb" data-skill="Node.js" data-level="75" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
+                        <div class="skill-icon">🟢</div>
+                        <div class="skill-name">Node.js</div>
+                    </div>
+                    <div class="skill-orb" data-skill="Java" data-level="70" style="background: linear-gradient(135deg, #ef4444, #f97316);">
+                        <div class="skill-icon">☕</div>
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-orb" data-skill="REST APIs" data-level="75" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+                        <div class="skill-icon">🔌</div>
+                        <div class="skill-name">REST APIs</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Skills -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="category-title">AI & Learning</h3>
+                <div class="skills-grid">
+                    <div class="skill-orb" data-skill="Machine Learning" data-level="60" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+                        <div class="skill-icon">🧠</div>
+                        <div class="skill-name">ML</div>
+                    </div>
+                    <div class="skill-orb" data-skill="Deep Learning" data-level="55" style="background: linear-gradient(135deg, #2563eb, #8b5cf6);">
+                        <div class="skill-icon">🤖</div>
+                        <div class="skill-name">DL</div>
+                    </div>
+                    <div class="skill-orb" data-skill="Python" data-level="65" style="background: linear-gradient(135deg, #3b82f6, #eab308);">
+                        <div class="skill-icon">🐍</div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-orb" data-skill="DSA" data-level="75" style="background: linear-gradient(135deg, #10b981, #14b8a6);">
+                        <div class="skill-icon">📊</div>
+                        <div class="skill-name">DSA</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="category-title">Tools & Design</h3>
+                <div class="skills-grid">
+                    <div class="skill-orb" data-skill="Git/GitHub" data-level="80" style="background: linear-gradient(135deg, #4b5563, #1f2937);">
+                        <div class="skill-icon">📦</div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                    <div class="skill-orb" data-skill="VS Code" data-level="90" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                        <div class="skill-icon">💻</div>
+                        <div class="skill-name">VS Code</div>
+                    </div>
+                    <div class="skill-orb" data-skill="Figma" data-level="65" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+                        <div class="skill-icon">🎨</div>
+                        <div class="skill-name">Figma</div>
+                    </div>
+                    <div class="skill-orb" data-skill="Problem Solving" data-level="80" style="background: linear-gradient(135deg, #06b6d4, #3b82f6);">
+                        <div class="skill-icon">🧩</div>
+                        <div class="skill-name">Problem Solving</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+        </h2>
+        <p class="section-subtitle">Click cards to see code snippets</p>
+
+        <div class="projects-grid">
+            <!-- Project 1: AgriFleet -->
+            <div class="project-card" data-aos="zoom-in">
+                <div class="project-front">
+                    <div class="project-icon">🚜</div>
+                    <h3 class="project-title">AgriFleet</h3>
+                    <p class="project-subtitle">Uber for Farmers</p>
+                    <p class="project-desc">
+                        A platform connecting farmers with vehicle owners for agricultural transport.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Maps API</span>
+                    </div>
+                    <button class="flip-btn">View Code →</button>
+                </div>
+                <div class="project-back">
+                    <h4>Code Sample</h4>
+                    <pre><code>// Booking System
+const createBooking = async (data) => {
+  const booking = await Booking.create({
+    farmer: data.farmerId,
+    vehicle: data.vehicleId,
+    pickup: data.route.start,
+    destination: data.route.end,
+    status: 'pending'
+  });
+  return booking;
+};</code></pre>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                    <button class="flip-btn">← Back</button>
+                </div>
+            </div>
+
+            <!-- Project 2: Zerodha Clone -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-front">
+                    <div class="project-icon">📈</div>
+                    <h3 class="project-title">Zerodha Clone</h3>
+                    <p class="project-subtitle">Trading Platform</p>
+                    <p class="project-desc">
+                        Learning project with stock charts, portfolio tracking, and real-time data.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <button class="flip-btn">View Code →</button>
+                </div>
+                <div class="project-back">
+                    <h4>Code Sample</h4>
+                    <pre><code>// Real-time Updates
+socket.on('stock-update', (data) => {
+  updateChart(data.symbol, data.price);
+});
+
+function buyStock(symbol, qty) {
+  socket.emit('place-order', {
+    type: 'BUY',
+    symbol,
+    quantity: qty
+  });
+}</code></pre>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                    <button class="flip-btn">← Back</button>
+                </div>
+            </div>
+
+            <!-- Project 3: LLM -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="project-front">
+                    <div class="project-icon">🤖</div>
+                    <h3 class="project-title">LLM from Scratch</h3>
+                    <p class="project-subtitle">Coming Soon</p>
+                    <p class="project-desc">
+                        Building a Large Language Model to understand transformer architecture.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <button class="flip-btn">View Code →</button>
+                </div>
+                <div class="project-back">
+                    <h4>Code Sample</h4>
+                    <pre><code># Transformer Block
+class TransformerBlock:
+    def __init__(self, dim, heads):
+        self.attn = MultiHeadAttention(dim, heads)
+        self.ffn = FeedForward(dim)
+    
+    def forward(self, x):
+        x = x + self.attn(x)
+        x = x + self.ffn(x)
+        return x</code></pre>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Coming Soon</a>
+                        <a href="#" class="project-link">Follow</a>
+                    </div>
+                    <button class="flip-btn">← Back</button>
+                </div>
+            </div>
+
+            <!-- Project 4: Portfolio -->
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="project-front">
+                    <div class="project-icon">✨</div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-subtitle">This Site!</p>
+                    <p class="project-desc">
+                        Interactive portfolio with 3D animations and glassmorphism design.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Canvas</span>
+                    </div>
+                    <button class="flip-btn">View Code →</button>
+                </div>
+                <div class="project-back">
+                    <h4>Code Sample</h4>
+                    <pre><code>// 3D Hover Effect
+card.addEventListener('mousemove', (e) => {
+  const rect = card.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  card.style.transform = 
+    `perspective(1000px) 
+     rotateX(${(y/rect.height-0.5)*10}deg)
+     rotateY(${(x/rect.width-0.5)*-10}deg)`;
+});</code></pre>
+                    <div class="project-links">
+                        <a href="#" class="project-link">You're Here!</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                    <button class="flip-btn">← Back</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">
+            Get In <span class="gradient-text">Touch</span>
+        </h2>
+        <p class="section-subtitle">Let's create something amazing together</p>
+
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form" data-aos="fade-right">
+                <h3>Send a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Anagha Kaloge</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">kalogeanagha@gmail.com</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info" data-aos="fade-left">
+                <div class="info-card">
+                    <h3>Let's Connect</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nashik,Maharashtra India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kalogeanagha@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🎓</span>
+                        <div>
+                            <h4>Education</h4>
+                            <p>B.E. Computer Engineering (2023-2027)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-card">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" style="background: linear-gradient(135deg, #4b5563, #1f2937);">
+                            <span class="social-icon">💻</span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+                            <span class="social-icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        </div>
+                    <div class="email-container">
+                        <a href="#" class="social-link " style="background: linear-gradient(135deg, #ef4444, #ec4899);">
+                            <span class="social-icon">📧</span>
+                            <span>Email</span>
+                        </a>
+                        </div>
+                    
+                </div>
+
+                <div class="quote-card">
+                    <p>"From coding roots to future fruits, each line carries a story." 🌱💻</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Anagha Kaloge. Built with ❤️ and lots of ☕</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
